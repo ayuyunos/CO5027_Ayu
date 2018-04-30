@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Bath_Bombs
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class masterpage : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

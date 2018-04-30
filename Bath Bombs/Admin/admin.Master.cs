@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Bath_Bombs
+namespace Bath_Bombs.Admin
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class admin1 : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

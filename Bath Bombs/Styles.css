@@ -1,0 +1,230 @@
+﻿body {
+    
+    background-color:cornsilk;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+#form1 {
+    height: 1856px;
+    width: 1513px;
+    margin-left: 0px;
+    position: center;
+   
+}
+
+
+#big-box {
+    width: 800px;
+    margin: auto;
+    min-height: 500px;
+    background-color: white;
+    padding: 0 40px 0 40px;
+    -moz-box-shadow: white 0 0 5px 5px;
+    -webkit-box-shadow: white 0 0 5px 5px;
+    box-shadow: black 0 0 5px 5px;
+    height: 1650px;
+    position: center;
+}
+
+
+
+#litResult {
+    margin-left:0px;
+}
+
+.TB {
+    text-align: center;
+}
+
+#map-static {
+    text-align: center;
+}
+
+
+
+#gmap_canvas img {
+    max-width: none !important; background: none !important;
+    position:static
+}
+
+#gmap_canvas {position:center;
+              margin-right:0px;
+              
+}
+
+#Login1 ul {
+    float: right;
+    clear: both;
+    padding: 15px;
+    margin: 0;
+    border-top: 1px white dotted;
+    text-align: center;
+    font-family: bankGothic;
+    position: sticky;
+}
+
+   
+
+#top-navigation ul {
+    clear: both;
+    padding: 15px;
+    margin: 0;
+    border-top: 1px white dotted;
+    text-align: center;
+    font-family: bankGothic;
+    position: sticky;
+}
+
+    #top-navigation ul li {
+        display: inline;
+        list-style-type: none;
+        margin: 0 50px 0 0;
+        background-color: white;
+        font-family: bankGothic;
+    }
+
+#top-navigation a:link {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: bankGothic;
+}
+
+#top-navigation a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: bankGothic;
+}
+
+#top-navigation a:active {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: bankGothic;
+}
+
+#top-navigation a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: bankGothic;
+}
+
+#top-navigation a:focus {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: bankGothic;
+}
+
+
+span {
+    font-family: Arial;
+    color: #818BA3;
+    font-size: medium;
+    table-layout: fixed
+}
+
+#wrapper {
+    width: 1000px;
+    margin-left: 250px;
+    margin-right: 200px;
+    position: center;
+    background-color: lemonchiffon;
+}
+
+#footer {
+    clear: both;
+    padding: 10px 0;
+    border-top: 1px #000 dotted;
+}
+
+    #footer p {
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    #footer a:link {
+        color: black;
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.item1 {
+    float: right;
+    border: 5px solid black;
+    margin: 80px 50px 50px 50px;
+    border: 3px solid grey;
+    margin-top: 1px;
+    position: relative;
+    width: 225px;
+    height: 270px;
+    overflow: hidden;
+}
+
+    .item1 img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .item1 .prodtext {
+        position: absolute;
+        top: -100%;
+        left: 0px;
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        color: whitesmoke;
+    }
+
+    .item1:hover .prodtext {
+        top: 0px;
+    }
+
+    .item1 .prodtext h4 {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 2px solid black;
+        padding-bottom: 10px;
+        margin-top: 10px;
+    }
+
+h1 {
+    font-family: KodchiangUPC;
+    font-size: 25px;
+    padding-top: 0px;
+    text-align: center;
+    color: black;
+}
+
+
+.item1 .prodtext p {
+    margin: 15px 0px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: arial;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

@@ -1,42 +1,25 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Bath_Bombs._Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterpage.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Bath_Bombs.Default" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="Styles.css" rel="stylesheet" type="text/css" media="screen" />
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+</asp:Content>
 
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
-    </div>
+     <h1> Bath Bombs | Lush Fresh Handmade Cosmetics UK </h1>
+
+    <div id="gallery" style="width: 893px; height: 337px">
+		<a href="img/1.jpg" title="Sample Caption Text"><img src="img/1.jpg"/></a>
+		<a href="img/2.jpg" title="Sample Caption Text"><img src="img/2.jpg"/></a>
+		<a href="img/3.jpg" title="Sample Caption Text"><img src="img/3.jpg"/></a>	
+		<a href="img/4.jpg" title="Sample Caption Text"><img src="img/4.jpg"/></a>	
+		<a href="img/5.jpg" title="Sample Caption Text"><img src="img/5.jpg"/></a>	
+        <a href="img/6.jpg" title="Sample Caption Text"><img src="img/6.jpg"/></a>	
+        <a href="img/7.jpg" title="Sample Caption Text"><img src="img/7.jpg"/></a>	
+		<a href="img/8.jpg" title="Sample Caption Text"><img src="img/8.jpg"/></a>	
+		<a href="img/9.jpg" title="Sample Caption Text"><img src="img/9.jpg"/></a>	
+    	<a href="img/10.jpg" title="Sample Caption Text"><img src="img/10.jpg"/></a>	
+		    
+     </div>
 
 </asp:Content>

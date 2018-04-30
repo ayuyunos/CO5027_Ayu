@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterpage.master.cs" Inherits="Bath_Bombs.masterpage" %>
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="Styles.css" rel="stylesheet" type="text/css" />
+    <title>Bath Boobs BN</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+ 
+</head>
+
+<body>
+
+   
+ <form id="form1" runat="server">    
+ <div id="big-box">
+
+   
+
+        <div id="Login1">
+
+       <ul id="boxLogin" style="height: 20px; width: 69px" >
+        <li><a href="login.aspx">Login</a></li>
+
+       </ul>
+           </div>
+
+ 
+<div id ="banner" style="left: 0px; top: 15px; height: 232px; width: 789px;">
+
+           
+       <img src="img/Lush-featured-image.jpg" runat ="server" alt="lushbombslogo" style="width: 795px" />
+                
+       
+        </div>
+
+
+<div id="top-navigation" class="wrap" style="width: 790px; height: 65px; margin-top: 130px;">
+            
+
+        <ul id="Nav"style="width: 790px; height: 42px;">
+	 <li><a href="Default.aspx">Home</a></li>
+	 <li><a href="Collection.aspx">Collection</a></li>
+     <li><a href="About.aspx">About</a></li>
+	 <li><a href="Contact.aspx">Contact</a></li>
+    
+</ul>
+
+ </div>
+      
+        <div id="content-area">
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>	 
+        </div>
+  
+
+
+
+
+
+
+    <div id="footer-area" style="margin-top: 936px">
+
+        <div id="footer">
+            
+            <p><a href="Admin/admin2.aspx"></a>Admin</p>
+
+            <p>@Copyright 2018. Lush Boobs BN.Bandar Seri Begawan. +673 8885555.</p>
+
+            <p> <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS |</a><a href="http://validator.w3.org/check?uri=referer">Validate HTML |</a><a href="http://achecker.c/checker/?uri=referer">Check WCAG </a></p>
+
+        </div>
+   
+  
+ </div>
+ </div>
+  </form> 
+</body>
+    
+</html>

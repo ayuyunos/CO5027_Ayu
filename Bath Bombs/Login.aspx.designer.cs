@@ -10,96 +10,87 @@
 namespace Bath_Bombs {
     
     
-    public partial class Contact {
+    public partial class Login {
         
         /// <summary>
-        /// TxtName control.
+        /// Txt_Username control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtName;
+        protected global::System.Web.UI.WebControls.TextBox Txt_Username;
         
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// Txt_Password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.TextBox Txt_Password;
         
         /// <summary>
-        /// TxtSubject control.
+        /// Button_1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtSubject;
+        protected global::System.Web.UI.WebControls.Button Button_1;
         
         /// <summary>
-        /// RequiredFieldValidator3 control.
+        /// Login_Error control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.Literal Login_Error;
         
         /// <summary>
-        /// TxtEmail control.
+        /// Txt_Full_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtEmail;
+        protected global::System.Web.UI.WebControls.TextBox Txt_Full_name;
         
         /// <summary>
-        /// RegularExpressionValidator1 control.
+        /// Txt_Pswd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        protected global::System.Web.UI.WebControls.TextBox Txt_Pswd;
         
         /// <summary>
-        /// TxtMessage control.
+        /// Txt_CnfmPswd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtMessage;
+        protected global::System.Web.UI.WebControls.TextBox Txt_CnfmPswd;
         
         /// <summary>
-        /// RequiredFieldValidator4 control.
+        /// Button_2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        protected global::System.Web.UI.WebControls.Button Button_2;
         
         /// <summary>
-        /// BtnSendEmail_Click control.
+        /// RegisterError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSendEmail_Click;
-        
-        /// <summary>
-        /// litResult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal litResult;
+        protected global::System.Web.UI.WebControls.Literal RegisterError;
     }
 }

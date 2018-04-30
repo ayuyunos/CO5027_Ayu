@@ -11,7 +11,7 @@ namespace Bath_Bombs
 {
 
 
-    public partial class Default
+    public partial class WebForm1
     {
     }
 }
