@@ -2,25 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <p>PRODUCT DETAILS</p>
 
-    <p>Product ID:</p>
-    <p><asp:TextBox ID="TextBox1" runat="server" Width="101px"></asp:TextBox></p>
-
-    <p>Product Name</p>
-    <p><asp:TextBox ID="TextBox2" runat="server" Width="208px"></asp:TextBox></p>
-
-    <p>Product Description</p>
-    <p><asp:TextBox ID="TextBox3" runat="server" Height="78px" Width="206px"></asp:TextBox></p>
-
-    <p>Quantity</p>
-    <p><asp:TextBox ID="TextBox4" runat="server" Width="30px"></asp:TextBox></p>
-
-    <p>Price</p>
-    <p><asp:TextBox ID="TextBox5" runat="server" Width="54px"></asp:TextBox></p>
     <p>
-        <asp:Button ID="Button1" runat="server" Text="Button" />
+        <asp:FormView ID="FormView1" runat="server" DataSourceID="SqlDataSource1"></asp:FormView>
     </p>
+     
     <p>
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ProductId" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="609px" ShowHeaderWhenEmpty="True">
             <Columns>
