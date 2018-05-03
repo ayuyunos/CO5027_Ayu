@@ -13,31 +13,31 @@ namespace Bath_Bombs {
     public partial class Login {
         
         /// <summary>
-        /// Txt_Username control.
+        /// txt_UserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt_Username;
+        protected global::System.Web.UI.WebControls.TextBox txt_UserName;
         
         /// <summary>
-        /// Txt_Password control.
+        /// txt_Password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt_Password;
+        protected global::System.Web.UI.WebControls.TextBox txt_Password;
         
         /// <summary>
-        /// Button_1 control.
+        /// btnLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_1;
+        protected global::System.Web.UI.WebControls.Button btnLogin;
         
         /// <summary>
         /// Login_Error control.
@@ -47,50 +47,5 @@ namespace Bath_Bombs {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal Login_Error;
-        
-        /// <summary>
-        /// Txt_Full_name control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt_Full_name;
-        
-        /// <summary>
-        /// Txt_Pswd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt_Pswd;
-        
-        /// <summary>
-        /// Txt_CnfmPswd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt_CnfmPswd;
-        
-        /// <summary>
-        /// Button_2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_2;
-        
-        /// <summary>
-        /// RegisterError control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal RegisterError;
     }
 }

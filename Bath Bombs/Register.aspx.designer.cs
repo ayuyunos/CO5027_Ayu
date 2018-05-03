@@ -10,42 +10,51 @@
 namespace Bath_Bombs {
     
     
-    public partial class masterpage {
+    public partial class Register {
         
         /// <summary>
-        /// head control.
+        /// Txt_Full_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.TextBox Txt_Full_name;
         
         /// <summary>
-        /// form1 control.
+        /// Txt_Pswd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox Txt_Pswd;
         
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// Txt_CnfmPswd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.TextBox Txt_CnfmPswd;
         
         /// <summary>
-        /// googleMap control.
+        /// Button_2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder googleMap;
+        protected global::System.Web.UI.WebControls.Button Button_2;
+        
+        /// <summary>
+        /// RegisterError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal RegisterError;
     }
 }

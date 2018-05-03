@@ -7,42 +7,19 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <p>&nbsp;</p>
-<p>&nbsp;</p>
+
 <p>Login</p>
     <p>&nbsp;Username:</p>
     <p>
-        <asp:TextBox ID="Txt_Username" runat="server" Width="300px"></asp:TextBox>
+        <asp:TextBox ID="txt_UserName" runat="server"></asp:TextBox>
     </p>
-
 <p>Password:</p>
     <p>
-        <asp:TextBox ID="Txt_Password" runat="server" Width="300px"></asp:TextBox>
+        <asp:TextBox ID="txt_Password" runat="server"></asp:TextBox>
     </p>
 
-<p><asp:Button ID="Button_1" runat="server" Text="Login" OnClick="Button1_Click" style="height: 29px" /></p>
+<p><asp:Button ID="btnLogin" runat="server" Text="Login" style="height: 29px" OnClick="btnLogin_Click" /></p>
 
     <asp:Literal ID="Login_Error" runat="server"></asp:Literal>
 
-    <p>Registration</p>
-
-    <p>Fullname:</p>
-    <p>
-        <asp:TextBox ID="Txt_Full_name" runat="server" Width="300px"></asp:TextBox>
-    </p>
-
-    <p>Password:</p>
-    <p>
-        <asp:TextBox ID="Txt_Pswd" runat="server" Width="300px"></asp:TextBox>
-    </p>
-
-    <p>Confirm Password:</p>
-    <p>
-        <asp:TextBox ID="Txt_CnfmPswd" runat="server" Width="300px"></asp:TextBox>
-    </p>
-   
-    <asp:Button ID="Button_2" runat="server" Text="Register" OnClick="Button2_Click" />
-
-    <br />
-    <br />
-    <asp:Literal ID="RegisterError" runat="server"></asp:Literal>
 </asp:Content>

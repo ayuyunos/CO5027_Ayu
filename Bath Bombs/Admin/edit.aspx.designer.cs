@@ -10,7 +10,7 @@
 namespace Bath_Bombs.Admin {
     
     
-    public partial class admin2 {
+    public partial class edit {
         
         /// <summary>
         /// FormView1 control.

@@ -8,18 +8,21 @@
 
      <h1> Bath Bombs | Lush Fresh Handmade Cosmetics UK </h1>
 
-    <div id="gallery" style="width: 893px; height: 337px">
-		<a href="img/1.jpg" title="Sample Caption Text"><img src="img/1.jpg"/></a>
-		<a href="img/2.jpg" title="Sample Caption Text"><img src="img/2.jpg"/></a>
-		<a href="img/3.jpg" title="Sample Caption Text"><img src="img/3.jpg"/></a>	
-		<a href="img/4.jpg" title="Sample Caption Text"><img src="img/4.jpg"/></a>	
-		<a href="img/5.jpg" title="Sample Caption Text"><img src="img/5.jpg"/></a>	
-        <a href="img/6.jpg" title="Sample Caption Text"><img src="img/6.jpg"/></a>	
-        <a href="img/7.jpg" title="Sample Caption Text"><img src="img/7.jpg"/></a>	
-		<a href="img/8.jpg" title="Sample Caption Text"><img src="img/8.jpg"/></a>	
-		<a href="img/9.jpg" title="Sample Caption Text"><img src="img/9.jpg"/></a>	
-    	<a href="img/10.jpg" title="Sample Caption Text"><img src="img/10.jpg"/></a>	
-		    
-     </div>
+    <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
+        <HeaderTemplate><div></HeaderTemplate>
+        <ItemTemplate>
+            <div class="classRepeater">
+            <a href="<%# Eval ("ProductId", "Product.aspx?Id={0}") %>">
+                <%#Eval("ProductName")%>
+
+                <div>
+                    <asp:Image ID="displayProductImage" runat="server" Height="180px" ImageUrl='<%# Eval("ProductImage") %>' Width ="180px" />
+                </div>
+            </a>
+
+            </div>
+        </ItemTemplate>
+</asp:Repeater>
+     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1626481_wpd_asgConnectionString %>" SelectCommand="SELECT * FROM [wpd_asg]"></asp:SqlDataSource>
 
 </asp:Content>

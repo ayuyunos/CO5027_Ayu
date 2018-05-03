@@ -23,7 +23,7 @@
     -moz-box-shadow: white 0 0 5px 5px;
     -webkit-box-shadow: white 0 0 5px 5px;
     box-shadow: black 0 0 5px 5px;
-    height: 1650px;
+    height: 1850px;
     position: center;
 }
 
@@ -157,19 +157,6 @@ span {
         text-decoration: none;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .item1 {
     float: right;
     border: 5px solid black;
@@ -227,4 +214,47 @@ h1 {
     font-family: arial;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/*insert image*/
+/*#Repeater1
+{
+    width: 25%;
+    margin: 10px;
+    float: left;
+    border-collapse:collapse;
+}
+
+ #Repeater1 
+{
+    padding: 5px 5px 5px 5px;
+    text-align:center;
+}
+
+#Repeater1
+{
+    padding: 5px 5px 5px 5px;
+}
+
+#displayProductImage
+{
+    position:center;
+}*/ 
+
+/**** Default table page ****/
+#tblDefault{
+    width:25%;
+    margin:10px;
+    float:left;
+    border-collapse:collapse;
+    border: 2px solid black;
+}
+
+#tblDefault tr{
+    padding:10px 10px 10px 10px;
+    text-align:center;
+}
+
+#tblDefault td{
+    padding:5px 10px 5px 10px;
 }

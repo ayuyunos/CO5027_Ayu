@@ -6,10 +6,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link href="Styles.css" rel="stylesheet" type="text/css" />
-    <title>Bath Boobs BN</title>
+    <meta name ="viewport" content="initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Bath Bombs BN</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
  
+    <style>
+        #map {
+            height: 500px;
+        }
+
+        html, body {
+            height: 100px;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -32,7 +46,7 @@
 <div id ="banner" style="left: 0px; top: 15px; height: 232px; width: 789px;">
 
            
-       <img src="img/Lush-featured-image.jpg" runat ="server" alt="lushbombslogo" style="width: 795px" />
+       <img src="productimage/Lush-featured-image.jpg" runat="server" alt="lushbombslogo" style="width: 795px" />
                 
        
         </div>
@@ -43,8 +57,8 @@
 
         <ul id="Nav"style="width: 790px; height: 42px;">
 	 <li><a href="Default.aspx">Home</a></li>
-	 <li><a href="Collection.aspx">Collection</a></li>
-     <li><a href="About.aspx">About</a></li>
+     <li><a href="Login.aspx">Login</a></li>
+     <li><a href="Register.aspx">Register</a></li>
 	 <li><a href="Contact.aspx">Contact</a></li>
     
 </ul>
@@ -59,20 +73,22 @@
         </div>
   
 
+     <asp:ContentPlaceHolder ID="googleMap" runat="server">
+        
+        </asp:ContentPlaceHolder>
 
 
 
 
-
-    <div id="footer-area" style="margin-top: 936px">
+    <div id="footer-area" style="margin-top: 200px">
 
         <div id="footer">
             
-            <p><a href="Admin/admin2.aspx"></a>Admin</p>
+            <p><a href="~/Admin/index.aspx" runat="server">Admin</a></p>
 
-            <p>@Copyright 2018. Lush Boobs BN.Bandar Seri Begawan. +673 8885555.</p>
+            <p>@Copyright 2018. Lush Bombs BN.Bandar Seri Begawan.</p>
 
-            <p> <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS |</a><a href="http://validator.w3.org/check?uri=referer">Validate HTML |</a><a href="http://achecker.c/checker/?uri=referer">Check WCAG </a></p>
+            <p> <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a><a href="http://validator.w3.org/check?uri=referer">Validate HTML |</a><a href="http://achecker.c/checker/?uri=referer">Check WCAG </a></p>
 
         </div>
    

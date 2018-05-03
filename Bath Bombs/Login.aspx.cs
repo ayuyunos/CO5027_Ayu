@@ -17,45 +17,49 @@ namespace Bath_Bombs
         {
 
         }
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            var identityDbContext = new IdentityDbContext("IdentityConnectionString");
-            var userStore = new UserStore<IdentityUser>(identityDbContext);
-            var manager = new UserManager<IdentityUser>(userStore);
-            var user = new IdentityUser() { UserName = Txt_Full_name.Text, Email = Txt_Full_name.Text };
-            IdentityResult result = manager.Create(user, Txt_Pswd.Text);
-            if (result.Succeeded)
-            {
-                RegisterError.Text = "Register Success";
-            }
-            else
-            {
-                RegisterError.Text = "An error has occured: " + result.Errors.FirstOrDefault();
-            }
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            var identityDbContext = new IdentityDbContext("IdentityConnectionString");
-            var userStore = new UserStore<IdentityUser>(identityDbContext);
-            var userManager = new UserManager<IdentityUser>(userStore);
-            var user = userManager.Find(Txt_Username.Text, Txt_Password.Text);
-            if (user != null)
-            {
-                Login_Error.Text = "You has been login";
-            }
-            else
-            {
-                Login_Error.Text = "Invalid username or password";
-
-
-            }
-        }
+       
         private void LogUserIn(UserManager<IdentityUser> usermanager, IdentityUser user)
         {
             var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
             var userIdentity = usermanager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
             authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
+
+            if (Request.QueryString["ReturnUrl"] !=null)
+            {
+                Response.Redirect(Request.QueryString["ReturnUrl"]);
+            }
+            else
+            {
+                String userRoles = usermanager.GetRoles(user.Id).FirstOrDefault();
+
+                if(userRoles.Equals("Admin"))
+                {
+                    Response.Redirect("~/Admin/Index.aspx");
+                }
+                else
+                {
+                    Response.Redirect("~/Default.aspx");
+                }
+
+            }
+
+        }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            var identityDbContext = new IdentityDbContext("IdentityConnectionString");
+            var userStore = new UserStore<IdentityUser>(identityDbContext);
+            var userManager = new UserManager<IdentityUser>(userStore);
+            var user = userManager.Find(txt_UserName.Text, txt_Password.Text);
+            if (user != null)
+            {
+                LogUserIn(userManager, user);
+            }
+            else
+            {
+                Login_Error.Text = "Invalid username or password";
+
+            }
         }
     }
 }

@@ -60,28 +60,24 @@
          <br />
 
     <asp:Literal ID="litResult" runat="server"></asp:Literal>
-
-         <p>Google Map</p>
-
-        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBhclm5GLoCFg766ilv-fJ1fUNsGx3SGuU'></script>
-        <div style='overflow:hidden;height:340px; width:814px;'>
-        <div id='gmap_canvas' style='height:340px; width:816px; margin-right:0px; margin-left: 0px;'></div>
-
-
-     </div>
-
-    
-
-         <a href='https://add-map.org/'>We Are Here</a>
-        <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=6cfcf792b726fcc030a1ee19d6d4ce7409dadf52'></script>
-        <script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(4.8833,114.93330000000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(4.8833,114.93330000000003)});infowindow = new google.maps.InfoWindow({content:'<strong>We\'re Here!</strong><br><br> Bandar Seri Begawan<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-     </div>
-    
-         <div id="map-static">
-         <p>Static Map</p>
-         <img src="images/Static%20Google%20Maps1.jpg" alt="Static Google Maps" />
-     </div>
-
-        
-   
+   </div>
 </asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="googleMap" runat="server">
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDos9mZDIV7W4bgSsS-Ie0hLMykr4KOBJY&callback=initMap"async defer>
+    </script>
+             </asp:Content>
